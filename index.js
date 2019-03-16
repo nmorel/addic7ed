@@ -5,7 +5,7 @@ function start() {
     const showsPage = fs.readFileSync(path.join(__dirname, 'shows.html'))
     const regex = /<a href="\/show\/([0-9]*)">(.*?)<\/a>/ig
 
-    const file = fs.createWriteStream(path.join(__dirname, 'Addic7ed.json'));
+    const file = fs.createWriteStream(path.join(__dirname, 'docs/Addic7ed.json'));
     file.write('[')
     let first = true
 
